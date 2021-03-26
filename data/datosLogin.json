@@ -1,0 +1,12 @@
+{
+    "url": "https://int.fpaynegocios.com/backoffice/web/dashboard-payments",
+    "tipoEjecucion": "true",
+    "Admin":{
+        "Email": "davidsilva_adm@int.com",
+        "Password": "100200"
+    },
+    "Sac":{
+         "Name": "David"
+         
+    }
+}

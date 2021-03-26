@@ -1,0 +1,12 @@
+{
+    "url": "https://cl-int.fpaynegocios.com/vu_auth/ui/index.php",
+    "tipoEjecucion": "true",
+    "Admin":{
+        "User": "Administrator",
+        "Password": "123456"
+    },
+    "Payments":{
+         "Rut": "CL:RUT:34815127"
+         
+    }
+}

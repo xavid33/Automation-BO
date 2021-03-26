@@ -1,0 +1,47 @@
+{
+    "url": "https://int.fpaynegocios.com/backoffice/web/login",
+    "tipoEjecucion": "true",
+    "Admin":{
+        "Email": "davidsilva_adm@int.com",
+        "Password": "100200"
+    },
+
+    "Sac":{
+        "Name": "Damelis",
+        "LastName": "Herrera",
+        "Phone": "932455678",
+        "DocNumber": "32323232",
+        "Email": "sasasas",
+        "Password1": "100200",
+        "Password2": "100200",
+        "Password3": "100800",
+        "Password4": "100200"
+
+    },
+
+    "Agente":{
+        "Name": "Julio",
+        "LastName": "Cabrera",
+        "Phone": "932455678",
+        "DocNumber": "32323232",
+        "Email": "sasasas",
+        "Password1": "100200",
+        "Password2": "100200",
+        "Password3": "100800",
+        "Password4": "100200"
+
+    },
+
+    "SacCL":{
+        "Name": "David",
+        "LastName": "Silva",
+        "Phone": "932455678",
+        "DocNumber": "32323232",
+        "Email": "sasasas",
+        "Password1": "100600",
+        "Password2": "150200",
+        "Password3": "100800",
+        "Password4": "100200"
+
+    }
+}

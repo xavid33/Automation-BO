@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-13T02:41:44.588Z",
+    "end": "2020-11-13T02:41:47.970Z",
+    "duration": 3382,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "5de7a092-a3d3-4289-9f6b-b2b12b18e716",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4bbf707-1da2-4990-8edc-fb53db84aef6",
+          "title": "Suite test Backoffice Login",
+          "fullFile": "/home/david/Digital payments/BO/fif-payments-automation-backoffice/test/LoginBackoffice.js",
+          "file": "/test/LoginBackoffice.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Suite test Backoffice Login\"",
+              "fullTitle": "Suite test Backoffice Login \"before each\" hook in \"Suite test Backoffice Login\"",
+              "timedOut": false,
+              "duration": 1938,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "basePage = new BasePage();\n        loginBackofficePage = new LoginBackoffice();\n               \n        await basePage.getDriver();\n        await basePage.visit(data.url);",
+              "err": {},
+              "uuid": "01063788-fa23-4f65-82a2-61a2c924366c",
+              "parentUUID": "a4bbf707-1da2-4990-8edc-fb53db84aef6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Suite test Backoffice Login\"",
+              "fullTitle": "Suite test Backoffice Login \"after each\" hook in \"Suite test Backoffice Login\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// await basePage.quit();",
+              "err": {},
+              "uuid": "4148dea4-f9fd-44c4-8dbe-6e57cf2ab9e5",
+              "parentUUID": "a4bbf707-1da2-4990-8edc-fb53db84aef6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login BO whit user valid",
+              "fullTitle": "Suite test Backoffice Login Login BO whit user valid",
+              "timedOut": false,
+              "duration": 1177,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//await loginBackofficePage.typeEmail(data.Admin.Email);\n\n        await loginBackofficePage.typeEmail(data.Admin.Email);\n\n        await loginBackofficePage.typePassword(data.Admin.Password);\n\n        await loginBackofficePage.clickLogin();\n\n            \n        //assert.equal(getText, 'Dashboard Fpay');",
+              "err": {},
+              "uuid": "6a5dd7cd-6f9e-4d0f-ad6e-d1b93079b395",
+              "parentUUID": "a4bbf707-1da2-4990-8edc-fb53db84aef6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6a5dd7cd-6f9e-4d0f-ad6e-d1b93079b395"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1177,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 50000
+        },
+        {
+          "uuid": "73441934-a115-43da-8efd-98c67b39afe9",
+          "title": "Suite test Backoffice Crear usuario",
+          "fullFile": "/home/david/Digital payments/BO/fif-payments-automation-backoffice/test/NewUserForm.js",
+          "file": "/test/NewUserForm.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook for \"Alta de usuario\"",
+              "fullTitle": "Suite test Backoffice Crear usuario \"before each\" hook for \"Alta de usuario\"",
+              "timedOut": false,
+              "duration": 256,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "basePage = new BasePage();\n        loginBackofficePage = new LoginBackoffice();\n        newUserForm = new NewUserForm();\n    \n        await basePage.getDriver();\n        await basePage.visit(data.url);",
+              "err": {
+                "message": "WebDriverError: unknown error: Chrome failed to start: exited abnormally\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+                "estack": "WebDriverError: unknown error: Chrome failed to start: exited abnormally\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\n    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:550:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:565:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:491:26)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+                "diff": null
+              },
+              "uuid": "0ffc1f75-a180-4bc0-9e90-c08495815887",
+              "parentUUID": "73441934-a115-43da-8efd-98c67b39afe9",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Suite test Backoffice Crear usuario\"",
+              "fullTitle": "Suite test Backoffice Crear usuario \"after each\" hook in \"Suite test Backoffice Crear usuario\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// await basePage.quit();",
+              "err": {},
+              "uuid": "864ea568-cf5f-4b71-9fe2-7e0d31bc5003",
+              "parentUUID": "73441934-a115-43da-8efd-98c67b39afe9",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Alta de usuario",
+              "fullTitle": "Suite test Backoffice Crear usuario Alta de usuario",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "if (data.tipoEjecucion == 'true') {\n            \n await loginBackofficePage.typeEmail(data.Admin.Email);\n await loginBackofficePage.typePassword(data.Admin.Password);\n await loginBackofficePage.clickLogin();\n //await basePage.waitForUrl('/dashboard-payments');\n await newUserForm.clickMenuDisplay();\n await newUserForm.selectedCreateUser();\n //await basePage.waitForUrl('/new-user');\n await newUserForm.clickCloseMenuDisplay();\n await newUserForm.typeName(data.Sac.Name);\n await newUserForm.typeLastName(data.Sac.LastName);\n await newUserForm.selectPaisNewUSer();\n await newUserForm.typePhone(data.Sac.Phone);\n await newUserForm.selectDocType();\n await newUserForm.typeDocNumber(await basePage.generateRut('c'));\n// let = newUserForm.typeDocNumber(basePage.updateUsersTxt('users'));\n await newUserForm.typeEmail(await basePage.generateEmail());\n //await newUserForm.typeEmail(await basePage.updateUsersTxt('email'));\n await newUserForm.selectRol(); \n await newUserForm.typePassword1(data.Sac.Password1);\n await newUserForm.typePassword2(data.Sac.Password2);\n //await newUserForm.clickBtn(); \n  }else{\n      this.skip();\n  }",
+              "err": {},
+              "uuid": "b8029bed-b1ac-43b2-a634-f6a28c4b49da",
+              "parentUUID": "73441934-a115-43da-8efd-98c67b39afe9",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "b8029bed-b1ac-43b2-a634-f6a28c4b49da"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 50000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "url": "https://int.fpaynegocios.com/backoffice/web/dashboard-payments",
+    "tipoEjecucion": "true",
+    "Admin":{
+        "Email": "davidsilva_adm@int.com",
+        "Password": "100200"
+    },
+    "FpayCL":{
+        "Rut": "9345930K",
+        "Telefono": "953346210"            
+    },
+    "FpayPE":{            
+        "Dni": "56654143",
+        "Telefono": "911671078"      
+    },
+    "Comercio":{
+        "Rut": "968158007",
+        "BusinessName": "APOSTOLES SA"
+    }
+}

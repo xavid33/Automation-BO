@@ -1,0 +1,34 @@
+{
+  "name": "fif-payments-automation-backoffice",
+  "version": "1.0.0",
+  "description": "Backoffice automation",
+  "main": "index.js",
+  "scripts": {
+    "testAll": "./node_modules/.bin/mocha test/ --reporter spec",
+    "dashComerce": "./node_modules/.bin/mocha test/DashboardComercio.js --reporter spec",
+    "dashFpay": "./node_modules/.bin/mocha test/DashboardFpay.js --reporter spec",
+    "login": "./node_modules/.bin/mocha test/LoginBackoffice.js --reporter spec",
+    "newUser": "./node_modules/.bin/mocha test/NewUserForm.js --reporter spec",
+    "statusFpay": "./node_modules/.bin/mocha test/FpayStatus.js --reporter spec",
+    "statusComerce": "./node_modules/.bin/mocha test/ComerceStatus.js --reporter spec",
+    "filtrosRapidos": "./node_modules/.bin/mocha test/FiltrosRapidos.js --reporter spec",
+    "vu": "./node_modules/.bin/mocha test/Users.js --reporter spec"
+   
+  },
+  "author": "David Silva",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "fs": "0.0.1-security",
+    "mocha": "^8.1.3",
+    "nodejs": "0.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "timeout": "^0.2.1"
+  },
+  "devDependencies": {
+    "mochawesome": "^6.1.1"
+  }
+}
